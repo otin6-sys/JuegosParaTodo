@@ -1,0 +1,74 @@
+/* === ESTILOS GENERALES === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* === HEADER === */
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #0077cc;  /* Color azul del header */
+  color: white;               /* Texto blanco */
+  border-bottom: 2px solid #005fa3; /* Opcional, borde más oscuro */
+}
+
+header h1 {
+  margin: 0 0 15px 0;  /* Separación del título respecto a los botones */
+  font-size: 2em;
+  color: white;
+}
+
+/* === NAVEGACIÓN === */
+.nav-container {
+  background-color: #005fa3;  
+  border-left: 2px solid #004f8a;
+  border-right: 2px solid #004f8a;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-container li {
+  margin: 0;
+}
+
+.nav-container a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-container a:hover {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+.nav-container a.active {
+  background-color: #0077cc;
+  color: white;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #e0f0ff;
+  color: #333;
+  margin-top: 50px;
+  border-top: 2px solid #0077cc;
+}

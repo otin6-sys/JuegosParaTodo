@@ -1,0 +1,145 @@
+/* === ESTILOS GENERALES PARA JUEGOS DE MESA === */
+
+.juegos-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* Introducción */
+.intro-juegos {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro-juegos h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #0077cc;
+}
+
+.intro-juegos p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Categorías de juegos */
+.juego-category {
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Colores suaves por categoría */
+#clasicos { background-color: #f0f8ff; }
+#estrategia { background-color: #e6f2ff; }
+#cartas { background-color: #d9ebff; }
+/* Resto de categorías se pueden añadir con colores distintos: fiesta, cooperativos, niños, rol, abstractos */
+
+/* Títulos de categoría */
+.juego-category h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  color: #005fa3;
+}
+
+.juego-category p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Contenedor del scroll */
+.scroll-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.juego-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px;
+}
+
+.juego-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+.juego-scroll::-webkit-scrollbar-thumb {
+  background-color: #0077cc;
+  border-radius: 5px;
+}
+
+/* Items de producto */
+.juego-item {
+  flex: 0 0 auto;
+  width: 160px; /* un poco más pequeño que antes */
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.juego-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.juego-item img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.juego-item h3 {
+  font-size: 1em;
+  margin: 5px 0;
+  color: #0077cc;
+}
+
+.juego-item .price {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #005fa3;
+}
+
+.juego-item .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+
+.juego-item .btn:hover {
+  background-color: #005fa3;
+}
+
+/* Botones de scroll */
+.scroll-btn {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+
+.scroll-btn:hover {
+  background-color: #005fa3;
+}

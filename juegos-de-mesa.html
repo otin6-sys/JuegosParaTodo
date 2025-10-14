@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juegos de Mesa | Juegos para Todos</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/juegos-de-mesa.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="main-header">
+    <h1>🎲 Juegos de Mesa</h1>
+    <p>Descubre los mejores juegos de mesa para todas las edades</p>
+    <nav class="nav-container">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="rompecabezas.html">Rompecabezas</a></li>
+        <li><a href="juegos-de-mesa.html" class="active">Juegos de Mesa</a></li>
+        <li><a href="puzzles.html">Puzzles</a></li>
+        <li><a href="juegos-construir.html">Juegos de Construir</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="juegos-container">
+
+    <!-- Introducción -->
+    <section class="intro-juegos">
+      <h2>🎲 Juegos de Mesa: diversión, estrategia y compañía</h2>
+      <p>
+        Los juegos de mesa son perfectos para compartir momentos con amigos y familia, mejorar habilidades estratégicas
+        y disfrutar de horas de entretenimiento. Aquí encontrarás desde juegos clásicos hasta modernos, cooperativos y de fiesta.
+      </p>
+    </section>
+
+    <!-- SECCIONES DE CATEGORÍAS -->
+    <!-- Cada categoría tiene scroll horizontal con 8 productos -->
+    
+    <!-- 1. Juegos Clásicos -->
+    <section class="juego-category" id="clasicos">
+      <h2>Juegos Clásicos</h2>
+      <p>Clásicos que nunca pasan de moda, ideales para todas las edades.</p>
+      <div class="scroll-container">
+        <button class="scroll-btn left" onclick="scrollLeft('clasicos-scroll')">◀</button>
+        <div class="juego-scroll" id="clasicos-scroll">
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Ajedrez"><h3>Ajedrez</h3><p class="price">15,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Damas"><h3>Damas</h3><p class="price">12,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Backgammon"><h3>Backgammon</h3><p class="price">18,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Scrabble"><h3>Scrabble</h3><p class="price">17,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Ludo"><h3>Ludo</h3><p class="price">10,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Monopoly"><h3>Monopoly</h3><p class="price">22,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Jenga"><h3>Jenga</h3><p class="price">14,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Connect 4"><h3>Connect 4</h3><p class="price">11,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollRight('clasicos-scroll')">▶</button>
+      </div>
+    </section>
+
+    <!-- 2. Juegos de Estrategia -->
+    <section class="juego-category" id="estrategia">
+      <h2>Juegos de Estrategia</h2>
+      <p>Planifica, gestiona recursos y supera desafíos en estos juegos estratégicos.</p>
+      <div class="scroll-container">
+        <button class="scroll-btn left" onclick="scrollLeft('estrategia-scroll')">◀</button>
+        <div class="juego-scroll" id="estrategia-scroll">
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Catan"><h3>Catan</h3><p class="price">34,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Risk"><h3>Risk</h3><p class="price">29,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Carcassonne"><h3>Carcassonne</h3><p class="price">31,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Ticket to Ride"><h3>Ticket to Ride</h3><p class="price">39,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Terraforming Mars"><h3>Terraforming Mars</h3><p class="price">44,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Twilight Struggle"><h3>Twilight Struggle</h3><p class="price">49,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Scythe"><h3>Scythe</h3><p class="price">54,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="7 Wonders"><h3>7 Wonders</h3><p class="price">37,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollRight('estrategia-scroll')">▶</button>
+      </div>
+    </section>
+
+    <!-- 3. Juegos de Cartas -->
+    <section class="juego-category" id="cartas">
+      <h2>Juegos de Cartas</h2>
+      <p>Rápidos, divertidos y competitivos para cualquier grupo de jugadores.</p>
+      <div class="scroll-container">
+        <button class="scroll-btn left" onclick="scrollLeft('cartas-scroll')">◀</button>
+        <div class="juego-scroll" id="cartas-scroll">
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Uno"><h3>Uno</h3><p class="price">8,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Dobble"><h3>Dobble</h3><p class="price">12,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Poker"><h3>Poker</h3><p class="price">20,00 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Magic"><h3>Magic: The Gathering</h3><p class="price">25,00 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Exploding Kittens"><h3>Exploding Kittens</h3><p class="price">14,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Hearthstone"><h3>Hearthstone</h3><p class="price">29,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Gloom"><h3>Gloom</h3><p class="price">19,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Dominion"><h3>Dominion</h3><p class="price">39,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollRight('cartas-scroll')">▶</button>
+      </div>
+    </section>
+
+    <!-- Aquí seguirías con las demás categorías: Fiesta, Cooperativos, Niños, Rol, Abstractos, siguiendo el mismo patrón -->
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <p>© 2025 Juegos para Todos | Juegos de mesa y diversión asegurada</p>
+  </footer>
+
+  <script src="js/juegos-de-mesa.js"></script>
+</body>
+</html>
