@@ -1,58 +1,141 @@
 /* === ESTILOS GENERALES PARA JUEGOS DE MESA === */
-.juegos-container {padding:20px;max-width:1200px;margin:auto;box-sizing:border-box;}
-.intro-juegos {text-align:center;margin-bottom:40px;}
-.intro-juegos h2 {font-size:2em;margin-bottom:10px;color:#0077cc;}
-.intro-juegos p {font-size:1.1em;color:#333;}
-
-/* Categorías de juegos */
-.juego-category {margin-bottom:50px;padding:20px;border-radius:10px;}
-#mas-jugados {background-color:#cfe6ff;}
-#clasicos {background-color:#a3d1ff;}
-#estrategia {background-color:#cfe6ff;}
-#cartas {background-color:#a3d1ff;}
-#rol {background-color:#cfe6ff;}
-
-/* Títulos de categoría */
-.juego-category h2 {text-align:center;margin-bottom:10px;font-size:1.8em;color:black;}
-.juego-category p {text-align:center;margin-bottom:20px;font-size:1em;color:#333;}
-
-/* Contenedor del scroll */
-.scroll-container {position:relative;display:flex;align-items:center;}
-.juego-scroll {display:flex;overflow-x:auto;scroll-behavior:smooth;gap:15px;padding:10px;cursor:grab;}
-.juego-scroll.dragging {cursor:grabbing;}
-.juego-scroll::-webkit-scrollbar {height:10px;}
-.juego-scroll::-webkit-scrollbar-thumb {background-color:#0077cc;border-radius:5px;}
-
-/* Items de producto compactos pero más llamativos */
-.juego-item {
-  flex:0 0 auto;
-  width:160px;
-  background-color:#fff;
-  padding:5px;
-  border-radius:10px;
-  text-align:center;
-  transition:transform 0.4s ease,box-shadow 0.4s ease;
+.juegos-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
 }
-.juego-item:hover {transform:scale(1.18);box-shadow:0 12px 30px rgba(0,0,0,0.35);}
-.juego-item img {width:100%;height:120px;object-fit:cover;border-radius:5px;margin-bottom:8px;transition:transform 0.4s ease;}
-.juego-item:hover img {transform:scale(1.07);}
-.juego-item h3 {font-size:1em;margin:4px 0;color:black;}
-.juego-item .price {font-size:0.9em;font-weight:bold;margin-bottom:6px;color:#005fa3;}
-.juego-item .btn {display:inline-block;padding:5px 12px;background-color:#0077cc;color:white;text-decoration:none;border-radius:5px;font-size:0.85em;transition:background-color 0.3s,transform 0.3s;}
-.juego-item .btn:hover {background-color:#005fa3;transform:scale(1.05);}
+
+/* Introducción */
+.intro-juegos {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.intro-juegos h2 { font-size: 2em; margin-bottom: 10px; color: #0077cc; }
+.intro-juegos p { font-size: 1.1em; color: #333; }
+
+/* Categorías */
+.juego-category {
+  margin-bottom: 40px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Colores alternos azul claro / medio */
+#mas-jugados { background-color: #e8f3ff; }
+#clasicos { background-color: #d6ebff; }
+#estrategia { background-color: #e8f3ff; }
+#cartas { background-color: #d6ebff; }
+#rol { background-color: #e8f3ff; }
+
+/* Títulos */
+.juego-category h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  color: #000;
+}
+.juego-category p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Contenedor scroll */
+.scroll-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.juego-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px;
+  cursor: grab;
+}
+.juego-scroll.dragging { cursor: grabbing; }
+.juego-scroll::-webkit-scrollbar { height: 10px; }
+.juego-scroll::-webkit-scrollbar-thumb { background-color: #0077cc; border-radius: 5px; }
+
+/* Productos */
+.juego-item {
+  flex: 0 0 auto;
+  width: 160px;
+  height: 240px; /* 🔹 altura fija */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* 🔹 organizamos el contenido verticalmente */
+  justify-content: space-between; /* 🔹 el botón siempre abajo */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.juego-item:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+.juego-item img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.juego-item h3 {
+  font-size: 1em;
+  color: black;
+  margin: 3px 0;
+  flex-grow: 1; /* 🔹 el texto ocupa el espacio variable */
+}
+.juego-item .price {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5px;
+}
+.juego-item .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+.juego-item .btn:hover { background-color: #005fa3; }
 
 /* Botones de scroll */
-.scroll-btn {background-color:#0077cc;color:white;border:none;border-radius:50%;font-size:20px;width:35px;height:35px;cursor:pointer;position:relative;z-index:1;transition:background-color 0.3s;}
-.scroll-btn:hover {background-color:#005fa3;}
-.scroll-btn:disabled {opacity:0.3;cursor:not-allowed;}
+.scroll-btn {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+.scroll-btn:hover { background-color: #005fa3; }
+.scroll-btn:disabled { opacity: 0.3; cursor: not-allowed; }
 
 /* Footer */
-.main-footer {text-align:center;padding:20px;background-color:#0077cc;color:white;font-size:0.9em;margin-top:50px;border-radius:10px 10px 0 0;}
+.main-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0077cc;
+  color: white;
+  font-size: 0.9em;
+  margin-top: 50px;
+  border-radius: 10px 10px 0 0;
+}
 
 /* Responsive */
-@media(max-width:768px){
-  .juego-item{width:130px;}
-  .juego-item img{height:100px;}
-  .intro-juegos h2{font-size:1.5em;}
-  .juego-category h2{font-size:1.5em;}
+@media (max-width: 768px) {
+  .juego-item { width: 130px; height: 220px; }
+  .intro-juegos h2, .juego-category h2 { font-size: 1.5em; }
 }

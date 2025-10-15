@@ -6,16 +6,12 @@
   <title>Puzzles | Juegos para Todos</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/puzzles.css" />
-  <script src="js/puzzles.js" defer></script>
 </head>
 <body>
-
   <!-- HEADER -->
   <header class="main-header">
     <h1>🧩 Puzzles</h1>
-    <p>Descubre el reto perfecto para cada edad y nivel</p>
-
-    <!-- BOTONES HEADER -->
+    <p>Descubre los mejores puzzles para todas las edades</p>
     <nav class="nav-container">
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -29,213 +25,117 @@
   </header>
 
   <!-- CONTENIDO PRINCIPAL -->
-  <main class="puzzles-container">
+  <main class="juegos-container">
 
-    <!-- INTRODUCCIÓN -->
-    <section class="intro-puzzles">
-      <h2>🧩 Puzzles: diversión, desafío y concentración</h2>
+    <!-- Introducción -->
+    <section class="intro-juegos">
+      <h2>🧩 Puzzles: entretenimiento y concentración</h2>
       <p>
-        Los puzzles combinan entretenimiento, paciencia y lógica. Armar un puzzle no solo es divertido,
-        también mejora la memoria visual y la concentración.
-      </p>
-      <p>
-        Encontrarás modelos para todas las edades y niveles: desde los clásicos de 500 piezas hasta los desafiantes 3D o de madera.
+        Los puzzles son ideales para estimular la mente, mejorar la paciencia y disfrutar de un rato divertido en solitario o en compañía. Aquí encontrarás desde puzzles fáciles hasta los más desafiantes y tridimensionales.
       </p>
     </section>
 
-    <!-- SECCIÓN 500 PIEZAS -->
-    <section class="puzzle-category" id="puzzles-500">
-      <h2>Puzzles de 500 piezas</h2>
-      <p>Perfectos para principiantes o tardes relajantes.</p>
-
+    <!-- 1. Puzzles Más Populares -->
+    <section class="juego-category" id="mas-populares">
+      <h2>Puzzles Más Populares</h2>
+      <p>Los puzzles que todos están armando actualmente.</p>
       <div class="scroll-container">
-        <button class="scroll-btn left" onclick="scrollLeft('scroll-500')">◀</button>
-        <div class="puzzle-scroll" id="scroll-500">
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Bosque">
-            <h3>Puzzle Bosque</h3>
-            <p class="price">12,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Bosque">
-            <h3>Puzzle Bosque</h3>
-            <p class="price">12,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Bosque">
-            <h3>Puzzle Bosque</h3>
-            <p class="price">12,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Bosque">
-            <h3>Puzzle Bosque</h3>
-            <p class="price">12,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Bosque">
-            <h3>Puzzle Bosque</h3>
-            <p class="price">12,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Ciudad">
-            <h3>Puzzle Ciudad</h3>
-            <p class="price">14,50 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Playa">
-            <h3>Puzzle Playa</h3>
-            <p class="price">13,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Montaña">
-            <h3>Puzzle Montaña</h3>
-            <p class="price">11,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Lago">
-            <h3>Puzzle Lago</h3>
-            <p class="price">15,50 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
+        <button class="scroll-btn left" onclick="scrollLeft('mas-populares-scroll')">◀</button>
+        <div class="juego-scroll" id="mas-populares-scroll">
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 1"><h3>Puzzle 1</h3><p class="price">14,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 2"><h3>Puzzle 2</h3><p class="price">12,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3"><h3>Puzzle 3</h3><p class="price">16,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 4"><h3>Puzzle 4</h3><p class="price">18,00 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 5"><h3>Puzzle 5</h3><p class="price">15,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 6"><h3>Puzzle 6</h3><p class="price">13,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 7"><h3>Puzzle 7</h3><p class="price">19,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 8"><h3>Puzzle 8</h3><p class="price">21,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
         </div>
-        <button class="scroll-btn right" onclick="scrollRight('scroll-500')">▶</button>
+        <button class="scroll-btn right" onclick="scrollRight('mas-populares-scroll')">▶</button>
       </div>
     </section>
 
-    <!-- SECCIÓN 1000 PIEZAS -->
-    <section class="puzzle-category" id="puzzles-1000">
-      <h2>Puzzles de 1000 piezas</h2>
-      <p>Un desafío intermedio con horas de diversión.</p>
-
+    <!-- 2. Puzzles Clásicos 500-1000 piezas -->
+    <section class="juego-category" id="clasicos">
+      <h2>Puzzles Clásicos 500-1000 piezas</h2>
+      <p>Perfectos para principiantes y aficionados.</p>
       <div class="scroll-container">
-        <button class="scroll-btn left" onclick="scrollLeft('scroll-1000')">◀</button>
-        <div class="puzzle-scroll" id="scroll-1000">
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Mapa Mundo">
-            <h3>Mapa del Mundo</h3>
-            <p class="price">18,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Mapa Mundo">
-            <h3>Mapa del Mundo</h3>
-            <p class="price">18,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Mapa Mundo">
-            <h3>Mapa del Mundo</h3>
-            <p class="price">18,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Mapa Mundo">
-            <h3>Mapa del Mundo</h3>
-            <p class="price">18,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Mapa Mundo">
-            <h3>Mapa del Mundo</h3>
-            <p class="price">18,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Mapa Mundo">
-            <h3>Mapa del Mundo</h3>
-            <p class="price">18,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Aurora">
-            <h3>Aurora Boreal</h3>
-            <p class="price">19,50 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Calle">
-            <h3>Calle Parisina</h3>
-            <p class="price">17,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Naturaleza">
-            <h3>Naturaleza Salvaje</h3>
-            <p class="price">21,00 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
+        <button class="scroll-btn left" onclick="scrollLeft('clasicos-scroll')">◀</button>
+        <div class="juego-scroll" id="clasicos-scroll">
+          <!-- 8 productos de ejemplo -->
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 500"><h3>Puzzle 500</h3><p class="price">17,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 600"><h3>Puzzle 600</h3><p class="price">18,00 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 700"><h3>Puzzle 700</h3><p class="price">19,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 800"><h3>Puzzle 800</h3><p class="price">21,00 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 900"><h3>Puzzle 900</h3><p class="price">22,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 1000"><h3>Puzzle 1000</h3><p class="price">23,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle Classic A"><h3>Puzzle Classic A</h3><p class="price">20,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle Classic B"><h3>Puzzle Classic B</h3><p class="price">21,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
         </div>
-        <button class="scroll-btn right" onclick="scrollRight('scroll-1000')">▶</button>
+        <button class="scroll-btn right" onclick="scrollRight('clasicos-scroll')">▶</button>
       </div>
     </section>
 
-    <!-- SECCIÓN 3D -->
-    <section class="puzzle-category" id="puzzles-3d">
+    <!-- 3. Puzzles de 2000 piezas -->
+    <section class="juego-category" id="p2000">
+      <h2>Puzzles de 2000 piezas</h2>
+      <p>Desafíos para expertos en puzzles.</p>
+      <div class="scroll-container">
+        <button class="scroll-btn left" onclick="scrollLeft('p2000-scroll')">◀</button>
+        <div class="juego-scroll" id="p2000-scroll">
+          <!-- 8 productos de ejemplo -->
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 2000 A"><h3>Puzzle 2000 A</h3><p class="price">34,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 2000 B"><h3>Puzzle 2000 B</h3><p class="price">36,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 2000 C"><h3>Puzzle 2000 C</h3><p class="price">38,00 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 2000 D"><h3>Puzzle 2000 D</h3><p class="price">37,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 2000 E"><h3>Puzzle 2000 E</h3><p class="price">39,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 2000 F"><h3>Puzzle 2000 F</h3><p class="price">40,00 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 2000 G"><h3>Puzzle 2000 G</h3><p class="price">41,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 2000 H"><h3>Puzzle 2000 H</h3><p class="price">42,00 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollRight('p2000-scroll')">▶</button>
+      </div>
+    </section>
+
+    <!-- 4. Puzzles Difíciles +2000 piezas -->
+    <section class="juego-category" id="dificiles">
+      <h2>Puzzles Difíciles +2000 piezas</h2>
+      <p>Solo para los más pacientes y expertos.</p>
+      <div class="scroll-container">
+        <button class="scroll-btn left" onclick="scrollLeft('dificiles-scroll')">◀</button>
+        <div class="juego-scroll" id="dificiles-scroll">
+          <!-- 8 productos de ejemplo -->
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3000 A"><h3>Puzzle 3000 A</h3><p class="price">49,99 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3000 B"><h3>Puzzle 3000 B</h3><p class="price">52,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3000 C"><h3>Puzzle 3000 C</h3><p class="price">54,00 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3000 D"><h3>Puzzle 3000 D</h3><p class="price">55,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3000 E"><h3>Puzzle 3000 E</h3><p class="price">57,00 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3000 F"><h3>Puzzle 3000 F</h3><p class="price">58,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3000 G"><h3>Puzzle 3000 G</h3><p class="price">60,00 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3000 H"><h3>Puzzle 3000 H</h3><p class="price">61,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollRight('dificiles-scroll')">▶</button>
+      </div>
+    </section>
+
+    <!-- 5. Puzzles 3D -->
+    <section class="juego-category" id="p3d">
       <h2>Puzzles 3D</h2>
-      <p>Construye estructuras con volumen real.</p>
-
+      <p>Puzzles tridimensionales para un desafío diferente.</p>
       <div class="scroll-container">
-        <button class="scroll-btn left" onclick="scrollLeft('scroll-3d')">◀</button>
-        <div class="puzzle-scroll" id="scroll-3d">
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Torre Eiffel">
-            <h3>Torre Eiffel</h3>
-            <p class="price">29,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Big Ben">
-            <h3>Big Ben</h3>
-            <p class="price">32,50 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Estadio">
-            <h3>Estadio Fútbol</h3>
-            <p class="price">27,90 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
+        <button class="scroll-btn left" onclick="scrollLeft('p3d-scroll')">◀</button>
+        <div class="juego-scroll" id="p3d-scroll">
+          <!-- 8 productos de ejemplo -->
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3D A"><h3>Puzzle 3D A</h3><p class="price">25,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3D B"><h3>Puzzle 3D B</h3><p class="price">28,00 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3D C"><h3>Puzzle 3D C</h3><p class="price">30,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3D D"><h3>Puzzle 3D D</h3><p class="price">32,00 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3D E"><h3>Puzzle 3D E</h3><p class="price">34,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3D F"><h3>Puzzle 3D F</h3><p class="price">36,00 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3D G"><h3>Puzzle 3D G</h3><p class="price">38,50 €</p><a href="#" class="btn">Ver en Amazon</a></div>
+          <div class="juego-item"><img src="img/puzzle.jpg" alt="Puzzle 3D H"><h3>Puzzle 3D H</h3><p class="price">40,00 €</p><a href="#" class="btn">Ver en Amazon</a></div>
         </div>
-        <button class="scroll-btn right" onclick="scrollRight('scroll-3d')">▶</button>
-      </div>
-    </section>
-
-    <!-- SECCIÓN MADERA -->
-    <section class="puzzle-category" id="puzzles-madera">
-      <h2>Puzzles de madera</h2>
-      <p>Elegantes, duraderos y ecológicos.</p>
-
-      <div class="scroll-container">
-        <button class="scroll-btn left" onclick="scrollLeft('scroll-madera')">◀</button>
-        <div class="puzzle-scroll" id="scroll-madera">
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle León">
-            <h3>León Abstracto</h3>
-            <p class="price">24,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Dragón">
-            <h3>Dragón Oriental</h3>
-            <p class="price">26,50 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-          <div class="puzzle-item">
-            <img src="img/puzzle.jpg" alt="Puzzle Gato">
-            <h3>Gato Colorido</h3>
-            <p class="price">23,99 €</p>
-            <a href="#" class="btn">Ver en Amazon</a>
-          </div>
-        </div>
-        <button class="scroll-btn right" onclick="scrollRight('scroll-madera')">▶</button>
+        <button class="scroll-btn right" onclick="scrollRight('p3d-scroll')">▶</button>
       </div>
     </section>
 
@@ -243,8 +143,9 @@
 
   <!-- FOOTER -->
   <footer class="main-footer">
-    <p>© 2025 Juegos para Todos | Puzzles y más diversión para tu mente</p>
+    <p>© 2025 Juegos para Todos | Puzzles y diversión asegurada</p>
   </footer>
 
+  <script src="js/puzzles.js"></script>
 </body>
 </html>

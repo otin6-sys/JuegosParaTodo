@@ -1,186 +1,148 @@
-/* === PUZZLES CSS MEJORADO === */
-.puzzles-container {
+/* === ESTILOS GENERALES PARA PUZZLES === */
+.juegos-container {
   padding: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 /* Introducción */
-.intro-puzzles {
-  max-width: 900px;
-  margin: 0 auto 30px auto;
+.intro-juegos {
   text-align: center;
+  margin-bottom: 40px;
 }
-
-.intro-puzzles h2 {
-  margin-bottom: 10px;
-  font-size: 2em;
-  color: #0077cc;
+.intro-juegos h2 { 
+  font-size: 2em; 
+  margin-bottom: 10px; 
+  color: #0077cc; 
 }
-
-.intro-puzzles p {
-  line-height: 1.6;
-  margin-bottom: 10px;
-  color: #333;
+.intro-juegos p { 
+  font-size: 1.1em; 
+  color: #333; 
 }
 
 /* Categorías */
-.puzzle-category {
+.juego-category {
   margin-bottom: 40px;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
-  transition: transform 0.3s;
 }
 
-/* Fondos por categoría */
-#puzzles-500 { background-color: #e6f2ff; }
-#puzzles-1000 { background-color: #e6ffe6; }
-#puzzles-3d { background-color: #fff4e6; }
-#puzzles-madera { background-color: #f2f2f2; }
+/* Colores alternos azul claro / medio */
+#mas-populares { background-color: #e8f3ff; }
+#clasicos { background-color: #d6ebff; }
+#p2000 { background-color: #e8f3ff; }
+#dificiles { background-color: #d6ebff; }
+#p3d { background-color: #e8f3ff; }
 
-.puzzle-category h2 {
+/* Títulos */
+.juego-category h2 {
   text-align: center;
   margin-bottom: 10px;
   font-size: 1.8em;
-  color: #005fa3;
+  color: #000;
 }
-
-.puzzle-category p {
+.juego-category p {
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto 20px auto;
+  margin-bottom: 20px;
+  font-size: 1em;
   color: #333;
 }
 
-/* Scroll horizontal */
+/* Contenedor scroll */
 .scroll-container {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 5px;
-  margin: 20px 0;
 }
-
-.puzzle-scroll {
+.juego-scroll {
   display: flex;
-  flex-wrap: nowrap;
   overflow-x: auto;
   scroll-behavior: smooth;
-  gap: 15px;
-  padding: 10px 0;
-  scrollbar-width: thin;
-  scrollbar-color: #0077cc #ccc;
+  gap: 20px;
+  padding: 10px;
+  cursor: grab;
 }
+.juego-scroll.dragging { cursor: grabbing; }
+.juego-scroll::-webkit-scrollbar { height: 10px; }
+.juego-scroll::-webkit-scrollbar-thumb { background-color: #0077cc; border-radius: 5px; }
 
-.puzzle-scroll::-webkit-scrollbar {
-  height: 8px;
-}
-
-.puzzle-scroll::-webkit-scrollbar-thumb {
-  background-color: #0077cc;
-  border-radius: 4px;
-}
-
-.puzzle-scroll::-webkit-scrollbar-track {
-  background-color: #ccc;
-}
-
-/* Producto */
-.puzzle-item {
-  width: 180px; /* más grande */
+/* Productos */
+.juego-item {
   flex: 0 0 auto;
-  text-align: center;
+  width: 160px;
+  height: 240px; /* altura fija */
   background-color: #fff;
-  padding: 12px;
+  padding: 10px;
   border-radius: 10px;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, opacity 0.5s;
-  opacity: 0;
-  animation: fadeIn 0.8s forwards;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* contenido vertical */
+  justify-content: space-between; /* botón abajo */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.puzzle-item:nth-child(1) { animation-delay: 0.1s; }
-.puzzle-item:nth-child(2) { animation-delay: 0.2s; }
-.puzzle-item:nth-child(3) { animation-delay: 0.3s; }
-.puzzle-item:nth-child(4) { animation-delay: 0.4s; }
-.puzzle-item:nth-child(5) { animation-delay: 0.5s; }
-.puzzle-item:nth-child(6) { animation-delay: 0.6s; }
-
-.puzzle-item:hover {
-  transform: scale(1.08);
-  box-shadow: 0px 6px 16px rgba(0,0,0,0.25);
-  background-color: #e0f0ff;
+.juego-item:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
-
-.puzzle-item img {
+.juego-item img {
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 8px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
 }
-
-.puzzle-item .price {
+.juego-item h3 {
+  font-size: 1em;
+  color: black;
+  margin: 3px 0;
+  flex-grow: 1; /* el texto ocupa el espacio variable */
+}
+.juego-item .price {
   font-weight: bold;
+  color: black;
   margin-bottom: 5px;
-  color: #005fa3; /* más visible */
 }
-
-.puzzle-item .btn {
+.juego-item .btn {
   display: inline-block;
   padding: 6px 12px;
   background-color: #0077cc;
   color: white;
   text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s, transform 0.3s;
-  font-size: 0.95em;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
 }
+.juego-item .btn:hover { background-color: #005fa3; }
 
-.puzzle-item .btn:hover {
-  background-color: #005fa3;
-  transform: scale(1.05);
-}
-
-/* Etiquetas ejemplo */
-.puzzle-item .label {
-  display: inline-block;
-  font-size: 0.7em;
-  background-color: #ff6347;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 4px;
-  margin-bottom: 5px;
-}
-
-/* Botones scroll */
+/* Botones de scroll */
 .scroll-btn {
   background-color: #0077cc;
   color: white;
   border: none;
-  font-size: 18px;
-  padding: 5px 12px;
-  border-radius: 4px;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
+  z-index: 1;
   transition: background-color 0.3s;
 }
+.scroll-btn:hover { background-color: #005fa3; }
+.scroll-btn:disabled { opacity: 0.3; cursor: not-allowed; }
 
-.scroll-btn:hover {
-  background-color: #005fa3;
-}
-
-/* Animación fade-in */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px);}
-  to { opacity: 1; transform: translateY(0);}
+/* Footer */
+.main-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0077cc;
+  color: white;
+  font-size: 0.9em;
+  margin-top: 50px;
+  border-radius: 10px 10px 0 0;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .puzzle-item {
-    width: 140px;
-  }
-  .scroll-btn {
-    font-size: 16px;
-    padding: 4px 8px;
-  }
-  .puzzle-category h2 {
-    font-size: 1.5em;
-  }
+  .juego-item { width: 130px; height: 220px; }
+  .intro-juegos h2, .juego-category h2 { font-size: 1.5em; }
 }
