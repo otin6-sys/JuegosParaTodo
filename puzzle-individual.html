@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puzzle Individual | Juegos para Todos</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/puzzle-individual.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="main-header">
+    <h1>🧩 Puzzle</h1>
+    <p>Detalles del puzzle seleccionado</p>
+    <nav class="nav-container">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="rompecabezas.html">Rompecabezas</a></li>
+        <li><a href="juegos-de-mesa.html">Juegos de Mesa</a></li>
+        <li><a href="puzzles.html" class="active">Puzzles</a></li>
+        <li><a href="juegos-de-construir.html">Juegos de Construir</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <a href="puzzles.html" class="back-button">← Volver a Puzzles</a>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="puzzle-container">
+    <div class="puzzle-left">
+      <img id="main-img" src="img/puzzle.jpg" alt="Puzzle principal" />
+      <div id="puzzle-galeria" class="puzzle-gallery"></div>
+    </div>
+
+    <div class="puzzle-right">
+      <h2 id="puzzle-title">Título del Puzzle</h2>
+      <p id="puzzle-category">Categoría / Dificultad</p>
+      <p id="puzzle-description">Descripción del puzzle</p>
+      <p id="puzzle-price">Precio</p>
+      <a id="puzzle-amazon" href="#" target="_blank" class="btn">Comprar en Amazon</a>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <p>© 2025 Juegos para Todos | Puzzles y diversión asegurada</p>
+  </footer>
+
+  <script src="js/puzzle-individual.js"></script>
+</body>
+</html>

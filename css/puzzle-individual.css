@@ -1,0 +1,132 @@
+/* Contenedor principal del puzzle */
+.puzzle-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 40px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+/* Columna izquierda: imagen principal + galería */
+.puzzle-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Imagen principal */
+#main-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+/* Efecto al pasar el ratón sobre la imagen grande */
+#main-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Galería de miniaturas */
+.puzzle-gallery {
+  display: flex;
+  gap: 10px;
+}
+
+/* Miniaturas */
+.puzzle-gallery img {
+  width: 100px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al pasar el ratón sobre miniaturas */
+.puzzle-gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Imagen seleccionada */
+.puzzle-gallery img.active {
+  border-color: #0077cc;
+  transform: scale(1.1);
+}
+
+/* Columna derecha: información del puzzle */
+.puzzle-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Título */
+.puzzle-right h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Texto descriptivo */
+.puzzle-right p {
+  margin-bottom: 25px; /* más separación */
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+/* Botón de Amazon */
+.puzzle-right .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.puzzle-right .btn:hover {
+  background-color: #005fa3;
+}
+
+/* Botón de volver */
+.back-button {
+  display: inline-block;
+  margin: 20px;
+  padding: 8px 16px;
+  background-color: #0077cc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  background-color: #ddd;
+}
+
+/* Footer */
+.main-footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #0077cc;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .puzzle-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .puzzle-left, .puzzle-right {
+    width: 100%;
+  }
+  .puzzle-gallery img {
+    width: 70px;
+  }
+}

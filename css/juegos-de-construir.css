@@ -1,0 +1,60 @@
+/* === HEADER y NAVEGACIÓN === */
+.main-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #0077cc;
+  color: white;
+  border-bottom: 2px solid #005fa3;
+}
+
+.main-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2em;
+  color: white;
+}
+
+.main-header p {
+  margin: 0 0 15px 0;
+  font-size: 1.1em;
+  color: #f0f0f0;
+}
+
+.nav-container {
+  background-color: #005fa3;
+  border-left: 2px solid #004f8a;
+  border-right: 2px solid #004f8a;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-container li {
+  margin: 0;
+}
+
+.nav-container a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-container a:hover {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+.nav-container a.active {
+  background-color: #0077cc;
+  color: white;
+  font-weight: bold;
+}

@@ -80,6 +80,7 @@
   flex-direction: column; /* contenido vertical */
   justify-content: space-between; /* botón abajo */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* ahora toda la tarjeta es clicable */
 }
 .juego-item:hover {
   transform: scale(1.07);
@@ -113,6 +114,11 @@
   transition: background-color 0.3s;
 }
 .juego-item .btn:hover { background-color: #005fa3; }
+
+/* Tarjetas como enlace completo */
+.juego-item-link {
+  text-decoration: none;
+}
 
 /* Botones de scroll */
 .scroll-btn {
